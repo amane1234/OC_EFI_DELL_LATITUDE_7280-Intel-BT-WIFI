@@ -22,6 +22,9 @@ EFI for Dell Latitude 7280 with OpenCore bootloader
 | BootLoader       | OpenCore 0.8.9                     |
 | macOS            | Ventura                            |
 
+You need to manually download and install itlwm.kext (or airportitlwm.kext) to use WIFI
+
+
 
 ![infomac](./Screenshot/infomac.png)
 
@@ -113,7 +116,7 @@ Type : setup_var 0x4ED 0x0
 
 To set DVMT PRE Allocated to 64 MB
 
-Tyep : setup_var 0x795 0x2
+Type : setup_var 0x795 0x2
 
 ![DMT-PRE](./Screenshot/DVMT-TOT.png)
 
