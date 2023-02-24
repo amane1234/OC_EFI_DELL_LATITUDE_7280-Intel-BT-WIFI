@@ -46,7 +46,7 @@ You need to manually download and install itlwm.kext (or airportitlwm.kext) to u
 - [x] Brightness Key
 - [x] F11 Print Screen Key
 - [x] F1 & F2 & F3 Sound Key
-- [x] Wi-Fi and Bluetooth BCM94352Z (DELL DW1560) Module
+- [x] Wi-Fi and Bluetooth (You need to manually download and install itlwm.kext (or airportitlwm.kext))
 - [x] Lan Intel I219-LM
 - [x] SSD NVME Slot-1 PciE
 - [x] Micro SD Cardreader
@@ -59,7 +59,6 @@ You need to manually download and install itlwm.kext (or airportitlwm.kext) to u
 
 ## Peripherals & TouchPad Setting & Benchmarks
 
-![infohack](./Screenshot/periferiche.png)
 ![infodp2](./Screenshot/pci-list.png)
 ![infopci](./Screenshot/pci-dev.png)
 ![Temp-Fan-Control](./Screenshot/Temp-Fan-Control.png)
