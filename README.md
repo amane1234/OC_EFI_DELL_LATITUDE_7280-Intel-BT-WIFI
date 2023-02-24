@@ -1,6 +1,4 @@
 # Dell Latitude 7280 (Kaby Lake) Hackintosh
-[![](https://img.shields.io/badge/EFI-Release-informational?style=flat&logo=apple&logoColor=white&color=9debeb)](https://github.com/Lorys89/DELL_LATITUDE_7280/releases)
-
 
 
 EFI for Dell Latitude 7280 with OpenCore bootloader
