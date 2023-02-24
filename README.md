@@ -15,12 +15,12 @@ EFI for Dell Latitude 7280 with OpenCore bootloader
 | iGPU             | Intel® HD 620 Graphics             |
 | Lan              | Intel I219-LM                      |
 | Audio            | Realtek ALC256                     |
-| Ram              | Crucial 16 GB DDR4 2133 Mhz        |
-| Wifi + Bluetooth | BCM94352Z (DW1560)                 |
+| Ram              | Crucial 8 GB DDR4 2133 Mhz         |
+| Wifi + Bluetooth | intel 3165                         |
 | NVMe             | SAMSUNG 980 500 GB (MACOS+WIN 11)  |
 | SmBios           | MacBookPro 14,1                    |
-| BootLoader       | OpenCore 0.8.3                     |
-| macOS            | Ventura 13 beta 6                  |
+| BootLoader       | OpenCore 0.8.9                     |
+| macOS            | Ventura                            |
 
 
 ![infomac](./Screenshot/infomac.png)
@@ -71,12 +71,6 @@ EFI for Dell Latitude 7280 with OpenCore bootloader
 ![metal](./Screenshot/metal.png)
 ![videoproc](./Screenshot/videoproc.png)
 
-
-### Special Config:
-
-- Usb port mapping performed (with port HS08 for touchscreen model)
-- SSDT-Hack Essential patch
-
 ### Post Install:
 
 Open terminal and run install.sh from TOOLS EFI MOD/ComboJack_Installer. After reboot insert jack and appears this image
@@ -99,42 +93,34 @@ See [ioreg](./MacBook%20Pro%2014%2C1.ioreg) for more clarification
 
 ### Disable : 
 * Secure Boot
-* Absolute
+* VT-D
 * Intel SGX
 * Wake on AC
 * Wake on Dell USB-C Dock
 * Enable UEFI Network Stack
-* CFG lock and DVMT: is necessary if you use this EFI.
+* CFG lock and DVMT
 
-## Restart and at the opencore GUI, choose the modGRUBShell.efi
+## IMPORTANT : To unlock CFG and DVMT, restart and at the opencore GUI, choose the modGRUBShell.efi
 
 ![CFG-LOCK](./Screenshot/CFG-LOCK.png)
 
-For set CFG LOCK Disabled
+To set CFG LOCK Disabled
 
-setup_var 0x4ED 0x0
+Type : setup_var 0x4ED 0x0
 
-(After this mod set false the quirks AppleXcpmCfgLock)
 
 ![DMT-PRE](./Screenshot/DVMT-PRE.png)
 
-For set DVMT PRE Allocated to 64 MB
+To set DVMT PRE Allocated to 64 MB
 
-setup_var 0x795 0x2
+Tyep : setup_var 0x795 0x2
 
 ![DMT-PRE](./Screenshot/DVMT-TOT.png)
 
-For set DVMT Total GFX Mem to MAX
+TO set DVMT Total GFX Mem to MAX
 
-setup_var 0x796 0x3
+Type : setup_var 0x796 0x3
 
-(After the DVMT Mod remove from igpu patch the string framebuffer-fbmem and framebuffer-stolenmem)
-
-
-
-### Working all NATIVE-SHORTCUTS-APPLE:
-
-![APPLE-NATIVE-SHORTCUTS](./Screenshot/APPLE-NATIVE-SHORTCUTS.png)
 
 ## Credits
 
