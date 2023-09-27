@@ -1,11 +1,9 @@
 # Dell Latitude 7280 (Kaby Lake) Hackintosh
 
 
-EFI for Dell Latitude 7280 with OpenCore bootloader
+EFI for Dell Latitude 7280 with OpenCore EFI
 
-![descrizione](./Screenshot/pc.jpg)
-
-### Computer Spec:
+### Laptop Spec:
 
 | Component        | Brank                              |
 | ---------------- | ---------------------------------- |
@@ -15,10 +13,11 @@ EFI for Dell Latitude 7280 with OpenCore bootloader
 | Audio            | Realtek ALC256                     |
 | Ram              | Crucial 8 GB DDR4 2133 Mhz         |
 | Wifi + Bluetooth | intel 3165                         |
-| NVMe             | SAMSUNG 980 500 GB (MACOS+WIN 11)  |
+| NVMe             | MICRON 256 GB (MACOS+WIN 11)       |
 | SmBios           | MacBookPro 14,1                    |
-| BootLoader       | OpenCore 0.8.9                     |
-| macOS            | Ventura                            |
+| BootLoader       | OpenCore 0.9.5                     |
+| macOS            | Sonoma                             |
+
 
 You need to manually download and install itlwm.kext (or airportitlwm.kext) to use WIFI
 
@@ -26,36 +25,15 @@ You need to manually download and install itlwm.kext (or airportitlwm.kext) to u
 
 ![infomac](./Screenshot/infomac.png)
 
-### What works and What doesn't or WIP:
+### What works and What doesn't:
 
-- [x] Intel HD 620 iGPU eDP with Backlight Output
-- [x] Intel HD 620 iGPU HDMI Output 
-- [x] Intel HD 620 iGPU Type-C to HDMI Output
-- [x] Intel HD 620 iGPU - H264 & HEVC
-- [x] ALC256 Internal Speakers
-- [x] ALC256 Internal microphone
-- [x] ALC256 Combojack headphones
-- [x] ALC256 Combojack microphone
-- [x] ALC256 HDMI Audio Output
-- [x] ALC256 TYPE-C to HDMI Audio Output
-- [x] All USB-A 3.1 Ports (TYPE-C 3.1 Included)
-- [x] SpeedStep / Sleep / Wake
-- [x] HID Key PWRB & SLPB 
-- [x] I2C ALPS Touchpad with gesture
-- [x] Keyboard (PS2-Internal) with backlight
-- [x] Brightness Key
-- [x] F11 Print Screen Key
-- [x] F1 & F2 & F3 Sound Key
-- [x] Wi-Fi and Bluetooth (You need to manually download and install itlwm.kext (or airportitlwm.kext))
-- [x] Lan Intel I219-LM
-- [x] SSD NVME Slot-1 PciE
-- [x] Micro SD Cardreader
-- [x] WebCam (USB-Internal)
-- [x] All Sensors CPU, IGPU, BATTERY, NVME, FAN
-- [x] ACPI Battery
-- [x] NVRAM (Native)
-- [x] Recovery (macOS) boot from OpenCore
-- [x] Windows 11 boot from OpenCore
+Since intelbluetooth card is not officially supported in MacOS, it might be laggy when it comes to pairing.
+
+Exchanging bluetooth card that support MacOS would be great idea.
+
+3.5mm headphone jack works but poor sound quality. Use bluetooth connections instead.
+
+
 
 ## Peripherals & TouchPad Setting & Benchmarks
 
