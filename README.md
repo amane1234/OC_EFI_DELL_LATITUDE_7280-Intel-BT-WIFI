@@ -33,12 +33,11 @@ Exchanging bluetooth card that support MacOS would be great idea.
 
 3.5mm headphone jack works but poor sound quality. Use bluetooth connections instead.
 
-
+Every function works well.
 
 ## Peripherals & TouchPad Setting & Benchmarks
 
 ![infodp2](./Screenshot/pci-list.png)
-![infopci](./Screenshot/pci-dev.png)
 ![Temp-Fan-Control](./Screenshot/Temp-Fan-Control.png)
 ![speedtest](./Screenshot/speedtest.png)
 ![touchpad](./Screenshot/touchpad.png)
