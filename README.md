@@ -3,7 +3,7 @@
 
 EFI for Dell Latitude 7280 with OpenCore EFI
 
-### Laptop Spec:
+### Laptop Spec
 
 | Component        | Brank                              |
 | ---------------- | ---------------------------------- |
