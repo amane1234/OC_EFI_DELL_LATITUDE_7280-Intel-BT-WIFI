@@ -13,7 +13,7 @@ EFI for Dell Latitude 7280 with OpenCore EFI
 | Audio            | Realtek ALC256                     |
 | Ram              | Crucial 8 GB DDR4 2133 Mhz         |
 | Wifi + Bluetooth | intel 3165                         |
-| NVMe             | MICRON 256 GB (MACOS+WIN 11)       |
+| NVMe             | MICRON 256 GB                      |
 | SmBios           | MacBookPro 14,1                    |
 | BootLoader       | OpenCore 0.9.5                     |
 | macOS            | Sonoma                             |
@@ -21,17 +21,18 @@ EFI for Dell Latitude 7280 with OpenCore EFI
 
 You need to manually download and install itlwm.kext (or airportitlwm.kext) to use WIFI
 
+itlwm / Airportitlwm : https://github.com/OpenIntelWireless/itlwm
 
+Heliport : https://github.com/OpenIntelWireless/HeliPort
 
-![infomac](./Screenshot/infomac.png)
 
 ### What works and What doesn't:
 
 Since intelbluetooth card is not officially supported in MacOS, it might be laggy when it comes to pairing.
 
-Exchanging bluetooth card that support MacOS would be great idea.
+Exchanging bluetooth card that support MacOS would be a great idea.
 
-3.5mm headphone jack works but poor sound quality. Use bluetooth connections instead.
+3.5mm headphone jack works yet poor sound quality. Use bluetooth connections instead.
 
 Every function works well.
 
@@ -97,10 +98,3 @@ Type : setup_var 0x795 0x2
 TO set DVMT Total GFX Mem to MAX
 
 Type : setup_var 0x796 0x3
-
-
-## Credits
-
-- [Apple](https://apple.com) for macOS.
-- [Acidanthera](https://github.com/acidanthera) for OpenCore and all the lovely hackintosh work.
-- [Juico](https://github.com/juico) for fix Alps i2c touchpad.
