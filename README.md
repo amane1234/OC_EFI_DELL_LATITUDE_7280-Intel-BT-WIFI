@@ -49,6 +49,14 @@ Every function works well.
 ![metal](./Screenshot/metal.png)
 ![videoproc](./Screenshot/videoproc.png)
 
+### SMBIOS:
+
+This hackintosh EFI uses MacBookPro 14,1 SMBIOS.
+
+Create your own MacBookPro 14,1 SMBIOS with GenSMBIOS
+
+https://github.com/corpnewt/GenSMBIOS
+
 ### Post Install:
 
 Open terminal and run install.sh from TOOLS EFI MOD/ComboJack_Installer. After reboot insert jack and appears this image
