@@ -26,6 +26,15 @@ itlwm / Airportitlwm : https://github.com/OpenIntelWireless/itlwm
 Heliport : https://github.com/OpenIntelWireless/HeliPort
 
 
+## Applied patches 
+
+- Disable RTC maintanence (DarkWake fix)
+- No_ACPI_Injection Opencore (Dual_boot ACPI injection fix)
+- hibernationfixup.kext and abhm_value = 127 (DarkWake fix)
+- hibernatemode:NVRAM (S3 sleep fix)
+- SSDT-EC / SSDT-USBX
+- SSDT-GPRW
+
 ### What works and What doesn't:
 
 Since intelbluetooth card is not officially supported in MacOS, it might be laggy when it comes to pairing.
@@ -34,7 +43,7 @@ Exchanging bluetooth card that support MacOS would be a great idea.
 
 3.5mm headphone jack works yet poor sound quality. Use bluetooth connections instead.
 
-Every function works well.
+Every function works quiet well.
 
 ## Peripherals & TouchPad Setting & Benchmarks
 
