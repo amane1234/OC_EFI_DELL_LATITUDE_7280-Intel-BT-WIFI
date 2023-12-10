@@ -68,7 +68,7 @@ https://github.com/corpnewt/GenSMBIOS
 
 ### Post Install:
 
-Open terminal and run install.sh from TOOLS EFI MOD/ComboJack_Installer. After reboot insert jack and appears this image
+Open terminal and run install.sh from TOOLS EFI MOD/ComboJack_Installer.
 ![jack](./Screenshot/Combojackfix.png)
 
 See [ioreg](./MacBook%20Pro%2014%2C1.ioreg) for more clarification
