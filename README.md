@@ -133,3 +133,12 @@ sudo pmset proximitywake 0
 sudo pmset tcpkeepalive 0
 ```
 
+If your hibernatemode is NVRAM at config.plist
+
+You may set hibernatemode 25 by
+
+```
+sudo pmset hibernatemode 25
+```
+To improve battery life when the laptop is in Sleep state (S3 / S4)
+
