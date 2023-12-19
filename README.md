@@ -115,3 +115,21 @@ Type : setup_var 0x795 0x2
 TO set DVMT Total GFX Mem to MAX
 
 Type : setup_var 0x796 0x3
+
+
+### Post Install regarding Sleep:
+
+To improve Sleep and battery life, I recommand to follow those things:
+
+- Disable Airdrop
+- Disable Powernap and internet awake
+
+pmset options: 
+```
+sudo pmset standby 1
+sudo pmset autopoweroff 1
+sudo pmset powernap 0
+sudo pmset proximitywake 0
+sudo pmset tcpkeepalive 0
+```
+
