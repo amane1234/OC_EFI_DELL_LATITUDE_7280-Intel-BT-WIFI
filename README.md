@@ -119,12 +119,13 @@ Type : setup_var 0x796 0x3
 
 ### Post Install regarding Sleep:
 
-To improve Sleep and battery life, I recommand to follow those things:
+**To improve Sleep and battery life, I recommand to follow those things:**
 
 - Disable Airdrop
 - Disable Powernap and internet awake
 
-pmset options: 
+
+**pmset options: **
 ```
 sudo pmset standby 1
 sudo pmset autopoweroff 1
@@ -133,9 +134,8 @@ sudo pmset proximitywake 0
 sudo pmset tcpkeepalive 0
 ```
 
-If your hibernatemode is NVRAM at config.plist
 
-You may set hibernatemode 25 by
+**If your hibernatemode is NVRAM at config.plist, you may set hibernatemode 25 by:**
 
 ```
 sudo pmset hibernatemode 25
