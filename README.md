@@ -104,20 +104,25 @@ Type : setup_var 0x796 0x3
 
 **pmset options: **
 ```
-sudo pmset standby 1
-sudo pmset autopoweroff 1
+sudo pmset standby 0
+sudo pmset autopoweroff 0
 sudo pmset powernap 0
 sudo pmset proximitywake 0
 sudo pmset tcpkeepalive 0
 ```
 
 
-**If your hibernatemode is NVRAM at config.plist, you may set hibernatemode 25 by:**
+**If your hibernatemode is NVRAM at config.plist, to improve battery life:**
 
 ```
 sudo pmset hibernatemode 25
 ```
-To improve battery life when the laptop is in Sleep state (S3 / S4)
+To improve battery life when the laptop is in Sleep state (S3)
 
 Usually this procedure is not required.
+
+
+
+
+
 
