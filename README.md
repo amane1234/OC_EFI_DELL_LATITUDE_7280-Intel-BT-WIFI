@@ -61,16 +61,16 @@ See [ioreg](./MacBook%20Pro%2014%2C1.ioreg) for more clarification
 * SATA Operation : AHCI
 * Fastboot : Minimal
 * Integrated NIC : Enable
-
+* VT-D
+  
 
 ### Disable : 
 * Secure Boot
-* VT-D
 * Intel SGX
 * Wake on AC
 * Wake on Dell USB-C Dock
 * Enable UEFI Network Stack
-* CFG lock and DVMT
+
 
 ## IMPORTANT : To unlock CFG and DVMT, restart and at the opencore GUI, choose the modGRUBShell.efi
 
