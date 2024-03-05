@@ -47,7 +47,7 @@ https://github.com/corpnewt/GenSMBIOS
 
 Open terminal and run install.sh from TOOLS EFI MOD/ComboJack_Installer.
 <p align="center">
-  ![jack](./Screenshot/Combojackfix.png)
+  <img src = "/Screenshot/Combojackfix.png">
 </p>
 
 <p align="center">
