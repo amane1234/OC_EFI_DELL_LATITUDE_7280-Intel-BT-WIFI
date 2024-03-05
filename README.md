@@ -112,17 +112,23 @@ sudo pmset tcpkeepalive 0
 ```
 
 
-**If your hibernatemode is NVRAM at config.plist, to improve battery life:**
+**(Experimental) Enable S4 Sleep:**
+
+You need to adjust some parameters in config.plist in order to enable S4 (Hibernation) state.
 
 ```
-sudo pmset hibernatemode 25
+ThirdPartyDrives = True (Set True if you are using 2.5 inch SSD or mSATA M.2 SSD)
+
+HibernateMode = NVRAM
+
 ```
-To improve battery life when the laptop is in Sleep state (S3)
-
-Usually this procedure is not required.
 
 
+After waking up from S4 sleep, you will face a blackscreen.
 
+Wait until the display turn off or press the power button to turn off the display.
 
+After waking up, your display will properly work.
 
+However, touchpad will not work after waking up from hibernation. (This needed to be fix!) 
 
