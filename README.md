@@ -123,12 +123,20 @@ HibernateMode = NVRAM
 
 ```
 
+And you need to adjust your hibernationmode by pmset.
 
-After waking up from S4 sleep, you will face a blackscreen.
+```
 
-Wait until the display turn off or press the power button to turn off the display.
+sudo pmset -a hibernationmode 25
+
+```
+
+Hibernation function should work after adjusting these values.
+
+There are some issue, however
+
+- After waking up from S4 sleep, you will face a blackscreen. Wait until the display turn off or press the power button to turn off the display.
 
 After waking up, your display will properly work.
 
-However, touchpad will not work after waking up from hibernation. (This needed to be fix!) 
-
+- Touchpad will not work after waking up from hibernation. (This needed to be fix!)
