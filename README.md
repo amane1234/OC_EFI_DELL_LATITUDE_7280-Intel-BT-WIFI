@@ -46,10 +46,13 @@ https://github.com/corpnewt/GenSMBIOS
 ### Post Install:
 
 Open terminal and run install.sh from TOOLS EFI MOD/ComboJack_Installer.
-![jack](./Screenshot/Combojackfix.png)
+<p align="center">
+  ![jack](./Screenshot/Combojackfix.png)
+</p>
 
-See [ioreg](./MacBook%20Pro%2014%2C1.ioreg) for more clarification
-
+<p align="center">
+  See [ioreg](./MacBook%20Pro%2014%2C1.ioreg) for more clarification
+</p>
 
 ### MacOS bootable USB creation:
 - Read the Dortania guide for creating your USB from Windows or macOS
