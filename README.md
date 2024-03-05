@@ -72,26 +72,17 @@ See [ioreg](./MacBook%20Pro%2014%2C1.ioreg) for more clarification
 * Enable UEFI Network Stack
 
 
-## IMPORTANT : To unlock CFG and DVMT, restart and at the opencore GUI, choose the modGRUBShell.efi
+## IMPORTANT : Using modGRUBShell.efi to unlock CFG-LOCK & DVMT value
 
 ![CFG-LOCK](./Screenshot/CFG-LOCK.png)
 
-To set CFG LOCK Disabled
 
-Type : setup_var 0x4ED 0x0
-
-
-![DMT-PRE](./Screenshot/DVMT-PRE.png)
-
-To set DVMT PRE Allocated to 64 MB
-
-Type : setup_var 0x795 0x2
+Type : setup_var 0x4ED 0x0 to unlock CFG-LOCK
 
 ![DMT-PRE](./Screenshot/DVMT-TOT.png)
 
-TO set DVMT Total GFX Mem to MAX
 
-Type : setup_var 0x796 0x3
+Type : setup_var 0x796 0x3 to set DVMT Total GFX Mem to MAX
 
 
 ### Post Install regarding Sleep:
@@ -110,6 +101,8 @@ sudo pmset powernap 0
 sudo pmset proximitywake 0
 sudo pmset tcpkeepalive 0
 ```
+
+
 
 
 **(Experimental) Enable S4 Sleep:**
