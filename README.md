@@ -75,13 +75,17 @@ Open terminal and run install.sh from TOOLS EFI MOD/ComboJack_Installer.
 
 ![CFG-LOCK](./Screenshot/CFG-LOCK.png)
 
-
-Type : setup_var 0x4ED 0x0 to unlock CFG-LOCK <br><br>
+```
+setup_var 0x4ED 0x0
+```
+to unlock CFG-LOCK <br><br>
 
 ![DMT-PRE](./Screenshot/DVMT-TOT.png)
 
-
-Type : setup_var 0x796 0x3 to set DVMT Total GFX Mem to MAX<br><br>
+```
+setup_var 0x796 0x3 
+```
+to set DVMT Total GFX Mem to MAX<br><br>
 
 
 ### Post Install regarding Sleep:
