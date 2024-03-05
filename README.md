@@ -50,10 +50,6 @@ Open terminal and run install.sh from TOOLS EFI MOD/ComboJack_Installer.
   <img src = "/Screenshot/Combojackfix.png">
 </p>
 
-<p align="center">
-  See [ioreg](./MacBook%20Pro%2014%2C1.ioreg) for more clarification
-</p>
-
 ### MacOS bootable USB creation:
 - Read the Dortania guide for creating your USB from Windows or macOS
 - [Guide Dortania](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/) - USB creation
