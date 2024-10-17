@@ -132,12 +132,10 @@ Hibernation function should work after adjusting these values.
 
 There are some issue, however
 
-- After waking up from S4 sleep, you will face a blackscreen. Wait until the display turn off or press the power button to turn off the display. This blackscreen might be fixed by
+- After waking up from S4 sleep, you will face a blackscreen. Wait until the display turn off or press the power button to turn off the display. This blackscreen might be fixed by:
 
-```
-hibernationfixup.kext with boot-args -hbfx-disable-patch-pci
+- hibernationfixup.kext with boot-args -hbfx-disable-patch-pci
 
-With reserved memory patch : https://github.com/5T33Z0/Lenovo-T530-Hackintosh-OpenCore/files/13537889/ReservedMemory.plist.zip
-```
+- Reserved memory patch : https://github.com/5T33Z0/Lenovo-T530-Hackintosh-OpenCore/files/13537889/ReservedMemory.plist.zip
 
 - Touchpad will not work after waking up from hibernation. (This needed to be fix!)
