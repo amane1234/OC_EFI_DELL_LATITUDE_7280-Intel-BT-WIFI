@@ -120,30 +120,24 @@ You need to adjust some parameters in config.plist in order to enable S4 (Hibern
 ThirdPartyDrives = True (Set True if you are using 2.5 inch SSD or mSATA M.2 SSD)
 
 HibernateMode = NVRAM
-
 ```
 
 And you need to adjust your hibernationmode by pmset.
 
 ```
-
 sudo pmset -a hibernationmode 25
-
 ```
 
 Hibernation function should work after adjusting these values.
 
 There are some issue, however
 
-- After waking up from S4 sleep, you will face a blackscreen. Wait until the display turn off or press the power button to turn off the display.
-```
-This blackscreen might be fixed by
+- After waking up from S4 sleep, you will face a blackscreen. Wait until the display turn off or press the power button to turn off the display. This blackscreen might be fixed by
 
+```
 hibernationfixup.kext with boot-args -hbfx-disable-patch-pci
 
 With reserved memory patch : https://github.com/5T33Z0/Lenovo-T530-Hackintosh-OpenCore/files/13537889/ReservedMemory.plist.zip
 ```
-
-After waking up, your display will properly work.
 
 - Touchpad will not work after waking up from hibernation. (This needed to be fix!)
